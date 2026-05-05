@@ -3,58 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Connect with Me</title>
+<title>Bin Hamza Scents</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <style>
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #000000, #1a1a1a);
     color: white;
     text-align: center;
+    overflow-x: hidden;
+}
+
+/* Background Logo */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background: url('https://raw.githubusercontent.com/yourrepo/logo.pngY') no-repeat center;
+    background-size: contain;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+    z-index: 0;
+}
+
+/* Content */
+.container {
+    position: relative;
+    z-index: 2;
     padding-top: 60px;
 }
 
 h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+    color: gold;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #bbb;
     margin-bottom: 40px;
 }
 
+/* Buttons */
 .btn {
-    display: block;
-    width: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 280px;
     margin: 15px auto;
     padding: 15px;
     font-size: 18px;
     color: white;
     text-decoration: none;
-    border-radius: 12px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 215, 0, 0.4);
+    backdrop-filter: blur(10px);
     transition: 0.3s;
 }
 
-.btn:hover {
-    transform: scale(1.05);
+.btn i {
+    font-size: 20px;
 }
 
-.wa { background: #25D366; }
-.ig { background: #E1306C; }
-.fb { background: #1877F2; }
+/* Hover */
+.btn:hover {
+    transform: scale(1.07);
+    background: rgba(255, 215, 0, 0.15);
+    border-color: gold;
+}
 
+/* Footer */
 .footer {
-    margin-top: 40px;
-    font-size: 14px;
-    color: #ccc;
+    margin-top: 50px;
+    font-size: 13px;
+    color: #777;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Connect With Me</h1>
+<div class="container">
+    <h1>BIN HAMZA</h1>
+    <div class="tagline">Premium Scents</div>
 
-<a class="btn wa" href="https://wa.me/03145066833">WhatsApp</a>
-<a class="btn ig" href="https://instagram.com/easy_store.pk">Instagram</a>
-<a class="btn fb" href="https://facebook.com/babar.mujahid">Facebook</a>
-<a class="btn tk" href="https://www.tiktok.com/easy_store.pk">Tiktok</a>
-<div class="footer">Powered by You 🚀</div>
+    <a class="btn" href="https://wa.me/03145066833">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+
+    <a class="btn" href="https://instagram.com/easy_store.pk">
+        <i class="fab fa-instagram"></i> Instagram
+    </a>
+
+    <a class="btn" href="https://facebook.com/babar.mujahid">
+        <i class="fab fa-facebook"></i> Facebook
+    </a>
+
+    <a class="btn" href="https://www.tiktok.com/@easy_store.pk">
+        <i class="fab fa-tiktok"></i> TikTok
+    </a>
+
+    <div class="footer">© Bin Hamza Scents</div>
+</div>
 
 </body>
 </html>
